@@ -1,7 +1,7 @@
 # Qalita Tutorials
 
 <p align="center">
-  <img width="250px" height="auto" src="https://platform.qalita.io/logo.svg" style="max-width:250px;"/>
+  <img width="250px" height="auto" src="https://cloud.platform.qalita.io/logo.svg" style="max-width:250px;"/>
 </p>
 
 ## Introduction
