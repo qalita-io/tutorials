@@ -32,13 +32,13 @@ services:
       - QALITA_ENV=DEMO
       - QALITA_API_PORT=3080
       - QALITA_API_HOST=0.0.0.0
-      - QALITA_FRONTEND_URL=http://localhost:3012
       - QALITA_ORGANIZATION_NAME=Qalita Demo Localhost
       - QALITA_API_WORKER=4
       - QALITA_AUTH_MODE=table
       - QALITA_S3_URL=http://s3:8333
       - QALITA_S3_KEY_ID=******************
       - QALITA_S3_KEY_SECRET=***********************
+      - QALITA_PUBLIC_PLATFORM_URL=http://localhost:3012
       - QALITA_PUBLIC_DOC_URL=http://localhost:3011
       - QALITA_PUBLIC_API_URL=http://localhost:3080
     depends_on:
