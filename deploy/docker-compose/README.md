@@ -9,9 +9,7 @@ To deploy locally on your computer, you will need:
 - Internet
 - A valid license key [📀 Purchase a license](https://qalita.io) or [contact us to get a trial key](mailto:contact@qalita.io)
 
-:::info
-La clé de licence permet de se connecter au docker registry et de pull les images docker, en plus d'ajouter des informations pour la plateforme.
-:::
+**The license key allows you to connect to the Docker registry and pull Docker images, in addition to adding information for the platform.**
 
 1. Sign in to the Docker image registry:
 
