@@ -43,7 +43,7 @@ This repo will store data examples, and code examples for tutorials in the [docu
 |                             | <img alt="Airbyte" src="https://cdn.simpleicons.org/Airbyte" height="16" /> Airbyte                                              | [Airbyte](#)            |
 | **Data Orchestration**      | <img alt="Apache Airflow" src="https://cdn.simpleicons.org/apacheairflow" height="16" /> Airflow                                 | [Airflow](#)            |
 |                             | <img alt="Dagster" src="https://docs.dagster.io/images/dagster-primary-mark.svg" height="16" /> Dagster                          | [Dagster](#)            |
-| **Data Quality Frameworks** | <img alt="Soda" src="https://avatars.githubusercontent.com/u/45313710?s=280&v=4" height="16" />                                  | [Soda](#)               |
+| **Data Quality Frameworks** | <img alt="Soda" src="https://avatars.githubusercontent.com/u/45313710?s=280&v=4" height="16" />  Soda                            | [Soda](#)               |
 |                             | <img alt="Great Expectations" src="https://avatars.githubusercontent.com/u/31670619?s=200&v=4" height="16" /> Great Expectations | [Great Expectations](#) |
 
 ### QALITA Platfrom Integration
