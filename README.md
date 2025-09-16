@@ -14,7 +14,7 @@ This repo will store data examples, and code examples for tutorials in the [docu
 
 ### Onboarding
 
-* [Get Started]()
+* [Get Started](https://doc.qalita.io/docs/platform/quick-start)
 
 ### General use cases
 
@@ -28,7 +28,7 @@ This repo will store data examples, and code examples for tutorials in the [docu
 |                    | Deploy an agent locally on Linux/MacOS | [Guide](https://doc.qalita.io/docs/cli/quick-start)                                                                |
 |                    | Deploy an agent with Docker            | [Guide](https://doc.qalita.io/docs/cli/docker)                                                                     |
 |                    | Deploy an agent with Kubernetes        | [Guide](https://artifacthub.io/packages/helm/qalita/qalita#agent)                                                  |
-| **Source**         | Register a source from local Agent     | [Guide](#)                                                                                                         |
+| **Source**         | Register a source from local Agent     | [Guide](./source/local-agent.md)                                                                                   |
 |                    | Register a source from CI/CD           | [Guide](#)                                                                                                         |
 |                    | Register a source from a remote agent  | [Guide](#)                                                                                                         |
 | **Pack**           | Create a pack                          | [Guide](https://doc.qalita.io/docs/platform/user-guides/data-engineering/packs#create-a-pack)                      |
