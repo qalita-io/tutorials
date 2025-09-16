@@ -12,4 +12,38 @@ This repo will store data examples, and code examples for tutorials in the [docu
 
 ## Table of Contents
 
-* [Deploy with Docker Compose](./deploy/docker-compose)
+| Category           | Task                                   | Link                                                                                                               |
+| ------------------ | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Deployment**     | Deploy Platform with Docker Compose    | [Guide](./deploy/docker-compose)                                                                                   |
+|                    | Deploy Platform with Helm              | [Guide](https://doc.qalita.io/docs/platform/user-guides/admin/deploy#requirements-1)                               |
+| **Authentication** | Setup LDAP authentication              | [Guide](https://doc.qalita.io/docs/platform/user-guides/admin/users-management/#ldap-registry)                     |
+|                    | Setup Microsoft Entra authentication   | [Guide](https://doc.qalita.io/docs/platform/user-guides/admin/users-management/#microsoft-authentication-oidcsaml) |
+| **Agent**          | Deploy an agent locally on Windows     | [Guide](https://doc.qalita.io/docs/cli/quick-start)                                                                |
+|                    | Deploy an agent locally on Linux/MacOS | [Guide](https://doc.qalita.io/docs/cli/quick-start)                                                                |
+|                    | Deploy an agent with Docker            | [Guide](https://doc.qalita.io/docs/cli/docker)                                                                     |
+|                    | Deploy an agent with Kubernetes        | [Guide](https://artifacthub.io/packages/helm/qalita/qalita#agent)                                                  |
+| **Source**         | Register a source from local Agent     | [Guide](#)                                                                                                         |
+|                    | Register a source from CI/CD           | [Guide](#)                                                                                                         |
+|                    | Register a source from a remote agent  | [Guide](#)                                                                                                         |
+| **Pack**           | Create a pack                          | [Guide](https://doc.qalita.io/docs/platform/user-guides/data-engineering/packs#create-a-pack)                      |
+|                    | Test a pack locally                    | [Guide](https://doc.qalita.io/docs/platform/user-guides/data-engineering/packs#test-a-pack)                        |
+|                    | Push a pack                            | [Guide](https://doc.qalita.io/docs/platform/user-guides/data-engineering/packs#publish-a-pack)                     |
+
+### Integration
+
+| Category                      | Integration        | Link                    |
+| ----------------------------- | ------------------ | ----------------------- |
+| **Issue Management**          | Gitlab             | [Gitlab](#)             |
+|                               | Jira               | [Jira](#)               |
+| **Alerting**                  | Teams              | [Teams](#)              |
+|                               | Slack              | [Slack](#)              |
+| **Reporting**                 | Tableau            | [Tableau](#)            |
+|                               | Power BI           | [Power BI](#)           |
+|                               | Looker             | [Looker](#)             |
+|                               | Apache Superset    | [Apache Superset](#)    |
+|                               | Grafana            | [Grafana](#)            |
+| **Data Catalog & Governance** | Collibra           | [Collibra](#)           |
+|                               | Atlation           | [Atlation](#)           |
+|                               | Microsoft Pureview | [Microsoft Pureview](#) |
+|                               | Datahub            | [Datahub](#)            |
+|                               | Apache Atlas       | [Apache Atlas](#)       |
