@@ -35,15 +35,15 @@ This repo will store data examples, and code examples for tutorials in the [docu
 |                    | Test a pack locally                    | [Guide](https://doc.qalita.io/docs/platform/user-guides/data-engineering/packs#test-a-pack)                        |
 |                    | Push a pack                            | [Guide](https://doc.qalita.io/docs/platform/user-guides/data-engineering/packs#publish-a-pack)                     |
 
-### QALITA CLI Integration
+### QALITA Data Engineering Integration
 
 | Category                    | Integration                                                                                                                      | Link                                                                                                    |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **ELT**                     | <img alt="dbt" src="https://cdn.simpleicons.org/dbt" height="16" /> DBT                                                          | [DBT](mailto:contact@qalita.io?subject=Request%20Integration%20-%20DBT)                                 |
+| **ELT** , export metadata and results from quality checks within your ELT to QALITA Platform.                     | <img alt="dbt" src="https://cdn.simpleicons.org/dbt" height="16" /> DBT                                                          | [DBT](mailto:contact@qalita.io?subject=Request%20Integration%20-%20DBT)                                 |
 |                             | <img alt="Airbyte" src="https://cdn.simpleicons.org/Airbyte" height="16" /> Airbyte                                              | [Airbyte](mailto:contact@qalita.io?subject=Request%20Integration%20-%20Airbyte)                         |
-| **Data Orchestration**      | <img alt="Apache Airflow" src="https://cdn.simpleicons.org/apacheairflow" height="16" /> Airflow                                 | [Airflow](mailto:contact@qalita.io?subject=Request%20Integration%20-%20Airflow)                         |
+| **Data Orchestration** , implement quality checks steps into your data pipelines and push metadata results into QALITA Platform.     | <img alt="Apache Airflow" src="https://cdn.simpleicons.org/apacheairflow" height="16" /> Airflow                                 | [Airflow](mailto:contact@qalita.io?subject=Request%20Integration%20-%20Airflow)                         |
 |                             | <img alt="Dagster" src="https://docs.dagster.io/images/dagster-primary-mark.svg" height="16" /> Dagster                          | [Dagster](mailto:contact@qalita.io?subject=Request%20Integration%20-%20Dagster)                         |
-| **Data Quality Frameworks** | <img alt="Soda" src="https://avatars.githubusercontent.com/u/45313710?s=280&v=4" height="16" />  Soda                            | [Soda](mailto:contact@qalita.io?subject=Request%20Integration%20-%20Soda)                               |
+| **Data Quality Frameworks** , use state-of-the-art data quality checks frameworks seamlessly with QALITA Platform. | <img alt="Soda" src="https://avatars.githubusercontent.com/u/45313710?s=280&v=4" height="16" />  Soda                            | [Soda](mailto:contact@qalita.io?subject=Request%20Integration%20-%20Soda)                               |
 |                             | <img alt="Great Expectations" src="https://avatars.githubusercontent.com/u/31670619?s=200&v=4" height="16" /> Great Expectations | [Great Expectations](mailto:contact@qalita.io?subject=Request%20Integration%20-%20Great%20Expectations) |
 
 ### QALITA Platfrom Integration
