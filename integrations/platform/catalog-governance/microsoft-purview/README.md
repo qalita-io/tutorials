@@ -1,4 +1,4 @@
-## Integration: Microsoft Purview ↔ QALITA (Draft)
+## Integration: Microsoft Purview ↔ QALITA (Beta)
 
 Goal: annotate Purview assets with QALITA data quality scores and issues.
 

@@ -1,4 +1,4 @@
-## Integration: dbt → QALITA (Draft)
+## Integration: dbt → QALITA (Beta)
 
 Goal: export data quality metadata and test results from dbt runs into QALITA.
 

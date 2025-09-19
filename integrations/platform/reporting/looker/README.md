@@ -1,4 +1,4 @@
-## Integration: Looker ← QALITA (Draft)
+## Integration: Looker ← QALITA (Beta)
 
 Goal: model QALITA metrics and issues in LookML and build explores.
 

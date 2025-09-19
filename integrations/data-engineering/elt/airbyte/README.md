@@ -1,4 +1,4 @@
-## Integration: Airbyte → QALITA (Draft)
+## Integration: Airbyte → QALITA (Beta)
 
 Goal: push Airbyte connection sync metadata and optional validation results into QALITA.
 

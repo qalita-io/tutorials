@@ -1,4 +1,4 @@
-## Integration: Soda → QALITA (Draft)
+## Integration: Soda → QALITA (Beta)
 
 Goal: forward Soda scan results to QALITA for centralized tracking and issue management.
 

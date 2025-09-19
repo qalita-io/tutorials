@@ -1,4 +1,4 @@
-## Integration: Apache Superset ← QALITA (Draft)
+## Integration: Apache Superset ← QALITA (Beta)
 
 Goal: explore and dashboard QALITA metrics and issues via Superset.
 

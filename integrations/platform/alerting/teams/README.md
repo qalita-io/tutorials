@@ -1,4 +1,4 @@
-## Integration: Microsoft Teams Alerts ← QALITA (Draft)
+## Integration: Microsoft Teams Alerts ← QALITA (Beta)
 
 Goal: deliver QALITA alerts to Microsoft Teams channels when scores drop or issues change.
 

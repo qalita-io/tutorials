@@ -1,4 +1,4 @@
-## Integration: GitLab Issues ↔ QALITA (Draft)
+## Integration: GitLab Issues ↔ QALITA (Beta)
 
 Goal: synchronize QALITA data quality issues with GitLab issues for triage and resolution.
 

@@ -1,4 +1,4 @@
-## Integration: Slack Alerts ← QALITA (Draft)
+## Integration: Slack Alerts ← QALITA (Beta)
 
 Goal: send QALITA alerts to Slack channels for rapid awareness and triage.
 

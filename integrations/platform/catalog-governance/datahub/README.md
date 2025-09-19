@@ -1,4 +1,4 @@
-## Integration: DataHub ↔ QALITA (Draft)
+## Integration: DataHub ↔ QALITA (Beta)
 
 Goal: publish QALITA quality assertions and metrics to DataHub for lineage-aware governance.
 

@@ -1,4 +1,4 @@
-## Integration: Power BI ← QALITA (Draft)
+## Integration: Power BI ← QALITA (Beta)
 
 Goal: visualize QALITA scores and issues in Power BI reports.
 

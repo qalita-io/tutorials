@@ -1,4 +1,4 @@
-## Integration: Tableau ← QALITA (Draft)
+## Integration: Tableau ← QALITA (Beta)
 
 Goal: consume QALITA metrics and issues in Tableau dashboards.
 

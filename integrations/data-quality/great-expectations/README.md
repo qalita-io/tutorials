@@ -1,4 +1,4 @@
-## Integration: Great Expectations → QALITA (Draft)
+## Integration: Great Expectations → QALITA (Beta)
 
 Goal: forward Great Expectations validation results to QALITA for centralized observability and issue tracking.
 
