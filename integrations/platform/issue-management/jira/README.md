@@ -1,4 +1,4 @@
-## Integration: Jira ↔ QALITA (Draft)
+## Integration: Jira ↔ QALITA (Beta)
 
 Goal: synchronize QALITA data quality issues with Jira for backlog tracking and resolution.
 

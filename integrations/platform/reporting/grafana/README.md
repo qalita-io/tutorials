@@ -1,4 +1,4 @@
-## Integration: Grafana ← QALITA (Draft)
+## Integration: Grafana ← QALITA (Beta)
 
 Goal: monitor QALITA metrics and alerts in Grafana.
 

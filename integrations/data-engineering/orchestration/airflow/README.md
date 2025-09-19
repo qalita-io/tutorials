@@ -1,4 +1,4 @@
-## Integration: Apache Airflow → QALITA (Draft)
+## Integration: Apache Airflow → QALITA (Beta)
 
 Goal: embed data quality steps into DAGs and report run metadata and check results to QALITA.
 

@@ -1,4 +1,4 @@
-## Integration: Dagster → QALITA (Draft)
+## Integration: Dagster → QALITA (Beta)
 
 Goal: integrate Dagster ops/jobs with QALITA for quality checks and run reporting.
 

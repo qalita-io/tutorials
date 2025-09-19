@@ -1,4 +1,4 @@
-## Integration: Atlassian (Confluence/Jira Assets) ↔ QALITA (Draft)
+## Integration: Atlassian (Confluence/Jira Assets) ↔ QALITA (Beta)
 
 Goal: surface QALITA quality summaries in Atlassian tools for governance and documentation.
 

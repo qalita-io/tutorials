@@ -1,4 +1,4 @@
-## Integration: Collibra ↔ QALITA (Draft)
+## Integration: Collibra ↔ QALITA (Beta)
 
 Goal: enrich Collibra with QALITA data quality metrics and link back to datasets.
 
