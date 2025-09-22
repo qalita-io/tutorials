@@ -1,0 +1,10 @@
+name: retail_checkpoint
+config_version: 1.0
+class_name: Checkpoint
+module_name: great_expectations.checkpoint
+validations:
+  - batch_request:
+      datasource_name: in_memory
+      data_asset_name: retail
+      options: {}
+    expectation_suite_name: retail_suite
