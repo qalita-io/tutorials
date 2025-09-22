@@ -1,0 +1,6 @@
+# Minimal dependencies to run the example Dagster job and resource
+dagster>=1.6.0
+python-dotenv>=1.0.1
+qalita>=2.3.0
+
+
