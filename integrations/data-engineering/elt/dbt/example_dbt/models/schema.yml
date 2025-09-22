@@ -1,0 +1,47 @@
+version: 2
+
+seeds:
+  - name: opendata_airquality
+    description: "Open Data sample of air quality measurements"
+    columns:
+      - name: city
+        tests:
+          - not_null
+      - name: country
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["FR", "US"]
+      - name: parameter
+        tests:
+          - not_null
+      - name: value
+        tests:
+          - not_null
+      - name: date_utc
+        tests:
+          - not_null
+
+models:
+  - name: stg_airquality
+    description: "Cleaned and typed measurements"
+    columns:
+      - name: city
+        tests: [not_null]
+      - name: country
+        tests: [not_null]
+      - name: parameter
+        tests: [not_null]
+      - name: measurement_value
+        tests: [not_null]
+      - name: measured_at_utc
+        tests: [not_null]
+
+  - name: airquality_metrics
+    description: "Aggregated metrics by city and parameter"
+    columns:
+      - name: city
+        tests: [not_null]
+      - name: parameter
+        tests: [not_null]
+
