@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  qalita-airbyte-adapter:
+    build:
+      context: ./adapter
+    image: qalita/airbyte-adapter:local
+    environment:
+      - QALITA_BASE_URL=${QALITA_BASE_URL:-http://localhost:8000}
+      - QALITA_USERNAME=${QALITA_USERNAME:-admin}
+      - QALITA_PASSWORD=${QALITA_PASSWORD:-admin}
+      - ADAPTER_CONFIG_PATH=/config/config.json
+    volumes:
+      - ./config:/config:ro
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  # Optionally reference Airbyte OSS if you want a local stack
+  # airbyte-webapp, airbyte-server, airbyte-worker, etc. are heavy.
+  # For brevity we only expose adapter here. Configure Airbyte to
+  # send webhooks to http://host.docker.internal:8080/airbyte/webhook
+
