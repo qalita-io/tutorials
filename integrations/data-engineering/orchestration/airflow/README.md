@@ -1,5 +1,9 @@
 ## Integration: Apache Airflow → QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-airflow.png"/>
+</p>
+
 Goal: embed data quality steps into DAGs and report run metadata and check results to QALITA.
 
 High-level flow:

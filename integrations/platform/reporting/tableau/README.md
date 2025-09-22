@@ -1,5 +1,9 @@
 ## Integration: Tableau ← QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-tableau.png"/>
+</p>
+
 Goal: consume QALITA metrics and issues in Tableau dashboards.
 
 High-level flow:

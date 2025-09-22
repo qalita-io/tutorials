@@ -1,5 +1,9 @@
 ## Integration: Microsoft Purview ↔ QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-purview.png"/>
+</p>
+
 Goal: annotate Purview assets with QALITA data quality scores and issues.
 
 High-level flow:

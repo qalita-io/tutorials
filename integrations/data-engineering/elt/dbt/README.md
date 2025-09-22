@@ -1,5 +1,9 @@
 ## Integration: dbt → QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-dbt.png"/>
+</p>
+
 **Goal:** export data quality metadata and test results from dbt runs into QALITA.
 
 **High-level flow:**

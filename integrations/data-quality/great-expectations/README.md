@@ -1,5 +1,9 @@
 ## Integration: Great Expectations → QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../img/integration/qalita-x-great-expectations.png"/>
+</p>
+
 Goal: forward Great Expectations validation results to QALITA for centralized observability and issue tracking.
 
 High-level flow:

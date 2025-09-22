@@ -1,5 +1,9 @@
 ## Integration: Dagster → QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-dagster.png"/>
+</p>
+
 Goal: integrate Dagster ops/jobs with QALITA for quality checks and run reporting.
 
 High-level flow:

@@ -1,5 +1,9 @@
 ## Integration: Apache Superset ← QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-superset.png"/>
+</p>
+
 Goal: explore and dashboard QALITA metrics and issues via Superset.
 
 High-level flow:
