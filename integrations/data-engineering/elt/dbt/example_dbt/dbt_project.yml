@@ -1,0 +1,23 @@
+name: "opendata_dbt"
+version: "1.0.0"
+config-version: 2
+
+# This project uses a local DuckDB file database.
+profile: "opendata_dbt"
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  opendata_dbt:
+    +materialized: view
+    staging:
+      +schema: "staging"
+    marts:
+      +schema: "marts"
+
+seeds:
+  +schema: "seeds"
+

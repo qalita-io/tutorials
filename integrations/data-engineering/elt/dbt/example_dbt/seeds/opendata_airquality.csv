@@ -1,0 +1,14 @@
+city,country,location,parameter,value,unit,date_utc
+Paris,FR,FR_AirLab_01,pm25,18.2,ug/m3,2025-06-01T08:00:00Z
+Paris,FR,FR_AirLab_01,pm25,22.1,ug/m3,2025-06-01T09:00:00Z
+Paris,FR,FR_AirLab_01,pm10,35.0,ug/m3,2025-06-01T09:00:00Z
+Lyon,FR,FR_AirLyon_02,pm25,15.8,ug/m3,2025-06-02T08:30:00Z
+Lyon,FR,FR_AirLyon_02,pm10,28.4,ug/m3,2025-06-02T08:30:00Z
+Lyon,FR,FR_AirLyon_02,no2,0.021,ppm,2025-06-02T08:30:00Z
+New York,US,US_EPA_NY_01,pm25,12.7,ug/m3,2025-06-03T13:00:00Z
+New York,US,US_EPA_NY_01,pm10,20.2,ug/m3,2025-06-03T13:00:00Z
+Los Angeles,US,US_EPA_LA_01,pm25,25.9,ug/m3,2025-06-04T10:00:00Z
+Los Angeles,US,US_EPA_LA_01,no2,0.035,ppm,2025-06-04T10:00:00Z
+Marseille,FR,FR_AirMars_03,pm25,19.5,ug/m3,2025-06-05T07:45:00Z
+Marseille,FR,FR_AirMars_03,pm10,30.1,ug/m3,2025-06-05T07:45:00Z
+
