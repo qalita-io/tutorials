@@ -1,0 +1,7 @@
+order_id,customer_email,amount,order_date
+1001,alice@example.com,49.90,2024-12-01
+1002,bob_at_example.com,0,2024-12-03
+1003,charlie@example.com,120.50,2024-12-08
+1004,,75.00,2024-12-10
+1005,dan@example.com,15.00,2024-12-12
+1006,alice@example.com,49.90,2024-12-13
