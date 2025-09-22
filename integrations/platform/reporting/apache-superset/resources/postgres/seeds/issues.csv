@@ -1,0 +1,4 @@
+issue_id,project,domain,severity,status,created_at,resolved_at
+ISS-1001,WebShop,Data Quality,high,open,2025-09-15T10:12:00Z,
+ISS-1002,WebShop,Data Quality,medium,resolved,2025-09-14T08:00:00Z,2025-09-16T14:30:00Z
+ISS-1003,WebShop,Governance,low,open,2025-09-17T09:45:00Z,

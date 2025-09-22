@@ -1,0 +1,14 @@
+metric_date,project,domain,metric_name,metric_value,tags
+2025-08-01,Project A,Sales,completeness_score,89.5,"{\"owner\":\"team-sales\"}"
+2025-08-02,Project A,Sales,completeness_score,90.1,"{\"owner\":\"team-sales\"}"
+2025-08-03,Project A,Sales,completeness_score,88.7,"{\"owner\":\"team-sales\"}"
+2025-08-01,Project A,Sales,validity_score,92.3,"{\"owner\":\"team-sales\"}"
+2025-08-02,Project A,Sales,validity_score,93.0,"{\"owner\":\"team-sales\"}"
+2025-08-03,Project A,Sales,validity_score,91.2,"{\"owner\":\"team-sales\"}"
+2025-08-01,Project B,Finance,completeness_score,76.2,"{\"owner\":\"team-finance\"}"
+2025-08-02,Project B,Finance,completeness_score,78.1,"{\"owner\":\"team-finance\"}"
+2025-08-03,Project B,Finance,completeness_score,79.0,"{\"owner\":\"team-finance\"}"
+2025-08-01,Project B,Finance,validity_score,85.0,"{\"owner\":\"team-finance\"}"
+2025-08-02,Project B,Finance,validity_score,84.7,"{\"owner\":\"team-finance\"}"
+2025-08-03,Project B,Finance,validity_score,86.5,"{\"owner\":\"team-finance\"}"
+
