@@ -1,0 +1,39 @@
+{
+  "connection": {
+    "connectionId": "your-airbyte-connection-id"
+  },
+  "job": {
+    "id": 1234,
+    "status": "succeeded",
+    "startedAt": 1716480000000,
+    "endedAt": 1716480123000,
+    "name": "Daily sync: shopify → warehouse"
+  },
+  "attempt": {
+    "number": 1,
+    "status": "succeeded",
+    "startedAt": 1716480000000,
+    "endedAt": 1716480123000,
+    "totalStats": {
+      "recordsEmitted": 102934,
+      "bytesEmitted": 123456789,
+      "recordsCommitted": 102934
+    }
+  },
+  "catalog": {
+    "streams": [
+      {
+        "name": "orders",
+        "jsonSchema": {
+          "type": "object",
+          "properties": {
+            "id": { "type": ["string", "null"] },
+            "created_at": { "type": ["string", "null"], "format": "date-time" },
+            "total_price": { "type": ["number", "null"] }
+          }
+        }
+      }
+    ]
+  }
+}
+

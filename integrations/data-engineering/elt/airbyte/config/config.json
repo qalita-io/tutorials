@@ -1,0 +1,17 @@
+{
+  "connection_map": {
+    "your-airbyte-connection-id": {
+      "source_id": 1,
+      "source_version_id": 1,
+      "pack_id": 1,
+      "pack_version_id": 1
+    }
+  },
+  "default": {
+    "source_id": 1,
+    "source_version_id": 1,
+    "pack_id": 1,
+    "pack_version_id": 1
+  }
+}
+
