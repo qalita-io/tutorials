@@ -1,0 +1,5 @@
+issue_id,project,domain,severity,status,created_at,resolved_at
+ISS-001,Project A,Sales,high,open,2025-08-01 09:00:00,
+ISS-002,Project A,Sales,medium,open,2025-08-02 10:30:00,
+ISS-003,Project B,Finance,low,resolved,2025-08-01 08:15:00,2025-08-02 12:00:00
+

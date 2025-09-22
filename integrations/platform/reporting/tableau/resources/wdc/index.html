@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QALITA × Tableau Web Data Connector</title>
+    <script src="https://connectors.tableau.com/libs/tableauwdc-2.3.latest.js"></script>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 24px;
+        line-height: 1.4;
+      }
+      .container {
+        max-width: 880px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin: 0 0 8px 0;
+      }
+      p.desc {
+        margin: 0 0 16px 0;
+        opacity: 0.85;
+      }
+      fieldset {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+      legend {
+        padding: 0 6px;
+        font-weight: 600;
+      }
+      label {
+        display: block;
+        font-weight: 600;
+        margin: 10px 0 6px;
+      }
+      input[type="text"], input[type="password"], input[type="number"] {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #aaa;
+        border-radius: 6px;
+      }
+      .row {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .col-6 { grid-column: span 6; }
+      .col-4 { grid-column: span 4; }
+      .col-3 { grid-column: span 3; }
+      .col-12 { grid-column: span 12; }
+      .checkboxes {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+      }
+      .actions {
+        display: flex;
+        gap: 12px;
+        margin-top: 16px;
+      }
+      button {
+        padding: 10px 14px;
+        border: 1px solid #444;
+        border-radius: 6px;
+        background: #111;
+        color: #fff;
+        cursor: pointer;
+      }
+      button.secondary {
+        background: transparent;
+        color: inherit;
+      }
+      small.muted { opacity: 0.7; }
+      .hint { font-size: 0.9em; opacity: 0.8; }
+      .error { color: #b00020; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>QALITA × Tableau Web Data Connector</h1>
+      <p class="desc">Connect Tableau to QALITA metrics and issues via REST APIs.</p>
+
+      <fieldset>
+        <legend>Connection</legend>
+        <label for="baseUrl">API Base URL</label>
+        <input id="baseUrl" type="text" placeholder="http://localhost:8000/api/v1" />
+
+        <label for="token">API Token</label>
+        <input id="token" type="password" placeholder="eyJhbGciOi..." />
+        <div class="hint">The token must allow read access to the selected resources.</div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tables</legend>
+        <div>Select the tables you want to import:</div>
+        <div class="checkboxes">
+          <label><input type="checkbox" id="tableMetrics" checked /> metrics</label>
+          <label><input type="checkbox" id="tableIssues" /> issues</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Parameters</legend>
+        <div class="row">
+          <div class="col-4">
+            <label for="reportId">Report ID</label>
+            <input id="reportId" type="number" placeholder="e.g., 101" />
+            <small class="muted">Required for metrics</small>
+          </div>
+          <div class="col-4">
+            <label for="sourceId">Source ID</label>
+            <input id="sourceId" type="number" placeholder="e.g., 2001" />
+            <small class="muted">Required for metrics</small>
+          </div>
+          <div class="col-4">
+            <label for="packId">Pack ID</label>
+            <input id="packId" type="number" placeholder="e.g., 3001" />
+            <small class="muted">Required for metrics</small>
+          </div>
+          <div class="col-6">
+            <label for="projectId">Project ID</label>
+            <input id="projectId" type="number" placeholder="e.g., 10" />
+            <small class="muted">Required for issues</small>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <button id="connectBtn">Connect to Tableau</button>
+        <button id="saveBtn" class="secondary">Save form</button>
+        <span id="err" class="error"></span>
+      </div>
+
+      <p class="hint">
+        This WDC calls QALITA APIs: metrics via <code>/api/v1/reports/{reportId}/metrics?source_id={sourceId}&pack_id={packId}</code> and issues via <code>/api/v1/projects/{projectId}/issues</code>.
+      </p>
+    </div>
+
+    <script src="./qalita-wdc.js"></script>
+    <script>
+      (function () {
+        const $ = (id) => document.getElementById(id);
+
+        // Load saved values
+        const saved = JSON.parse(localStorage.getItem("qalita_wdc") || "{}");
+        ["baseUrl", "token", "reportId", "sourceId", "packId", "projectId"].forEach((k) => {
+          if (saved[k] != null) $(k).value = saved[k];
+        });
+        $("tableMetrics").checked = saved.tableMetrics ?? true;
+        $("tableIssues").checked = saved.tableIssues ?? false;
+
+        function save() {
+          const data = {
+            baseUrl: $("baseUrl").value.trim() || "http://localhost:8000/api/v1",
+            token: $("token").value.trim(),
+            reportId: $("reportId").value.trim(),
+            sourceId: $("sourceId").value.trim(),
+            packId: $("packId").value.trim(),
+            projectId: $("projectId").value.trim(),
+            tableMetrics: $("tableMetrics").checked,
+            tableIssues: $("tableIssues").checked,
+          };
+          localStorage.setItem("qalita_wdc", JSON.stringify(data));
+          return data;
+        }
+
+        $("saveBtn").addEventListener("click", () => {
+          save();
+          $("err").textContent = "Saved.";
+          setTimeout(() => ($("err").textContent = ""), 1500);
+        });
+
+        $("connectBtn").addEventListener("click", () => {
+          const cfg = save();
+          $("err").textContent = "";
+
+          // Basic validation
+          if (!cfg.token) {
+            $("err").textContent = "Token is required.";
+            return;
+          }
+          if (cfg.tableMetrics && (!cfg.reportId || !cfg.sourceId || !cfg.packId)) {
+            $("err").textContent = "Metrics require reportId, sourceId, and packId.";
+            return;
+          }
+          if (cfg.tableIssues && !cfg.projectId) {
+            $("err").textContent = "Issues require projectId.";
+            return;
+          }
+
+          tableau.connectionName = "QALITA";
+          tableau.connectionData = JSON.stringify(cfg);
+          tableau.submit();
+        });
+      })();
+    </script>
+  </body>
+  </html>
+
+

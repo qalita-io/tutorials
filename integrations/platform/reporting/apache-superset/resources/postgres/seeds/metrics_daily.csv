@@ -1,0 +1,10 @@
+metric_date,project,domain,metric_name,metric_value,tags
+2025-09-15,WebShop,Data Quality,completeness_score,92.3,"{\"source\":\"dq\"}"
+2025-09-16,WebShop,Data Quality,completeness_score,93.8,"{\"source\":\"dq\"}"
+2025-09-17,WebShop,Data Quality,completeness_score,91.1,"{\"source\":\"dq\"}"
+2025-09-15,WebShop,Data Quality,freshness_hours,4.0,"{\"pipeline\":\"daily_ingest\"}"
+2025-09-16,WebShop,Data Quality,freshness_hours,6.5,"{\"pipeline\":\"daily_ingest\"}"
+2025-09-17,WebShop,Data Quality,freshness_hours,3.2,"{\"pipeline\":\"daily_ingest\"}"
+2025-09-15,WebShop,Governance,pii_fields_found,12,"{\"scanner\":\"pii\"}"
+2025-09-16,WebShop,Governance,pii_fields_found,10,"{\"scanner\":\"pii\"}"
+2025-09-17,WebShop,Governance,pii_fields_found,8,"{\"scanner\":\"pii\"}"

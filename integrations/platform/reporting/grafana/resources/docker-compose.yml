@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: qalita_reporting_pg
+    environment:
+      POSTGRES_USER: reporter
+      POSTGRES_PASSWORD: reporter
+      POSTGRES_DB: qalita_reporting
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d
+      - ./postgres/seeds:/docker-entrypoint-initdb.d/seeds
+
+  grafana:
+    image: grafana/grafana:10.4.5
+    container_name: qalita_grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_INSTALL_PLUGINS=marcusolsson-json-datasource
+      - QALITA_API_TOKEN=${QALITA_API_TOKEN}
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+    depends_on:
+      - postgres
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    env_file:
+      - ./.env
+
+volumes:
+  pgdata:
+  grafana-storage:
+
+

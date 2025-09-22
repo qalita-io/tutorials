@@ -1,0 +1,8 @@
+metric_date,project,domain,metric_name,metric_value,tags
+2025-08-01,Storefront,Checkout,availability,0.998,"{\"env\":\"prod\"}"
+2025-08-02,Storefront,Checkout,availability,0.997,"{\"env\":\"prod\"}"
+2025-08-03,Storefront,Checkout,availability,0.999,"{\"env\":\"prod\"}"
+2025-08-01,Storefront,Product,data_freshness_hours,2,"{\"env\":\"prod\"}"
+2025-08-02,Storefront,Product,data_freshness_hours,4,"{\"env\":\"prod\"}"
+2025-08-03,Storefront,Product,data_freshness_hours,3,"{\"env\":\"prod\"}"
+

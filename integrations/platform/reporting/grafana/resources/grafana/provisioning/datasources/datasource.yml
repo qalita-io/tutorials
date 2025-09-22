@@ -1,0 +1,30 @@
+apiVersion: 1
+
+datasources:
+  - name: QALITA Reporting (Postgres)
+    type: postgres
+    access: proxy
+    isDefault: true
+    editable: true
+    url: postgres:5432
+    user: reporter
+    secureJsonData:
+      password: reporter
+    jsonData:
+      database: qalita_reporting
+      sslmode: disable
+      postgresVersion: 1500
+      timescaledb: false
+
+  - name: QALITA API (JSON)
+    type: marcusolsson-json-datasource
+    access: proxy
+    editable: true
+    jsonData:
+      httpMethod: GET
+      url: http://host.docker.internal:8000/api/v1
+      authenticationType: bearer
+    secureJsonData:
+      bearerToken: "${QALITA_API_TOKEN}"
+
+
