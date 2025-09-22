@@ -19,7 +19,7 @@ Backend touchpoints:
 
 Implementation options:
 
-- Use QALITA CLI (`/home/aleopold/platform/tools-cli`) in a dbt post-hook or CI step:
+- Use QALITA CLI (`/home/<user>/platform/tools-cli`) in a dbt post-hook or CI step:
   - Collect artifacts: `target/manifest.json`, `target/run_results.json`
   - Run: `qalita ingest dbt --manifest path --results path --project <name> --env <name>`
 - Direct REST integration from CI using an API token.
@@ -41,7 +41,7 @@ Next steps:
 
 Cet exemple montre comment utiliser dbt avec DuckDB à partir d'une seed Open Data (qualité de l'air), puis ingérer les artefacts dbt dans QALITA.
 
-- **Dossier**: `/home/aleopold/platform/tutorials/integrations/data-engineering/elt/dbt/example_dbt`
+- **Dossier**: `/home/<user>/platform/tutorials/integrations/data-engineering/elt/dbt/example_dbt`
 - **Base**: DuckDB (fichier `opendata.duckdb` local)
 - **Seed**: `seeds/opendata_airquality.csv`
 - **Modèles**: `models/staging/stg_airquality.sql`, `models/marts/airquality_metrics.sql`
@@ -56,7 +56,7 @@ Cet exemple montre comment utiliser dbt avec DuckDB à partir d'une seed Open Da
 
 1. Aller dans l'exemple:
 ```bash
-cd /home/aleopold/platform/tutorials/integrations/data-engineering/elt/dbt/example_dbt
+cd /home/<user>/platform/tutorials/integrations/data-engineering/elt/dbt/example_dbt
 ```
 2. Créer l'environnement, installer dbt-duckdb, charger la seed, construire et tester:
 ```bash
