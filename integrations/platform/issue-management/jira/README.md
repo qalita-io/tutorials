@@ -1,5 +1,9 @@
 ## Integration: Jira ↔ QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-jira.png"/>
+</p>
+
 Goal: synchronize QALITA data quality issues with Jira for backlog tracking and resolution.
 
 High-level flow:

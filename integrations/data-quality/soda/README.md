@@ -1,5 +1,9 @@
 ## Integration: Soda → QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../img/integration/qalita-x-soda.png"/>
+</p>
+
 Goal: forward Soda scan results to QALITA for centralized tracking and issue management.
 
 High-level flow:

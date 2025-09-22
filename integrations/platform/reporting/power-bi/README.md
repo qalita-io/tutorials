@@ -1,5 +1,9 @@
 ## Integration: Power BI ← QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-powerbi.png"/>
+</p>
+
 Goal: visualize QALITA scores and issues in Power BI reports.
 
 High-level flow:

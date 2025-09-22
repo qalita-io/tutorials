@@ -1,5 +1,9 @@
 ## Integration: DataHub ↔ QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-datahub.png"/>
+</p>
+
 Goal: publish QALITA quality assertions and metrics to DataHub for lineage-aware governance.
 
 High-level flow:

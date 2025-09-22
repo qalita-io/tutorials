@@ -1,5 +1,9 @@
 ## Integration: Grafana ← QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-grafana.png"/>
+</p>
+
 Goal: monitor QALITA metrics and alerts in Grafana.
 
 High-level flow:

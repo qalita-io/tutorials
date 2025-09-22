@@ -1,5 +1,9 @@
 ## Integration: Airbyte → QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-airbyte.png"/>
+</p>
+
 Goal: push Airbyte connection sync metadata and optional validation results into QALITA.
 
 High-level flow:

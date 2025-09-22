@@ -1,5 +1,9 @@
 ## Integration: GitLab Issues ↔ QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-gitlab.png"/>
+</p>
+
 Goal: synchronize QALITA data quality issues with GitLab issues for triage and resolution.
 
 High-level flow:

@@ -1,5 +1,9 @@
 ## Integration: Looker ← QALITA (Beta)
 
+<p align="center">
+  <img width="800px" height="auto" src="../../../../img/integration/qalita-x-looker.png"/>
+</p>
+
 Goal: model QALITA metrics and issues in LookML and build explores.
 
 High-level flow:
