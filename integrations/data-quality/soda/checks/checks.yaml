@@ -1,0 +1,7 @@
+checks for retail:
+  - row_count > 0
+  - missing_count(customer_email) = 0
+  - invalid_count(customer_email) = 0:
+      valid format: email
+  - duplicate_count(order_id) = 0
+  - min(amount) > 0

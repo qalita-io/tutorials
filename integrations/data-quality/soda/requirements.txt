@@ -1,0 +1,2 @@
+pandas>=2.0.0
+soda-core[pandas]==3.5.5
