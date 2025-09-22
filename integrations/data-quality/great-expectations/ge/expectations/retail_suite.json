@@ -1,0 +1,29 @@
+{
+  "expectation_suite_name": "retail_suite",
+  "meta": {
+    "created_by": "qalita-example",
+    "notes": "Minimal suite for tutorial"
+  },
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {"column": "id"}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {"column": "date"}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {"column": "amount", "min_value": 0, "max_value": 10000, "allow_cross_type_comparisons": true}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex",
+      "kwargs": {"column": "currency", "regex": "^(EUR|USD|GBP)$"}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {"column": "id"}
+    }
+  ]
+}
