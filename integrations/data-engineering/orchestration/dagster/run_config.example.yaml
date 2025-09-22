@@ -1,0 +1,16 @@
+ops:
+  qalita_agent_run:
+    config:
+      source_id: "1"   # replace with your source id
+      pack_id: "1"     # replace with your pack id
+
+resources:
+  qalita:
+    config:
+      # Optional: override via config instead of env vars
+      # endpoint: "http://localhost:3080"
+      # token: "..."
+      agent_name: "dagster-agent"
+      agent_mode: "job"
+
+
