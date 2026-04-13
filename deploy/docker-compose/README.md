@@ -14,8 +14,10 @@ To deploy locally on your computer, you will need:
 1. Sign in to the Docker image registry:
 
 ```bash
-docker login qalita.azurecr.io
+docker login ghcr.io
 ```
+
+Use your GitHub username and a personal access token with the `read:packages` scope when prompted for password.
 
 2. Create these two files:
 

@@ -1,7 +1,7 @@
 name: qalita-platform-frontend-stack
 services:
   backend:
-    image: qalita.azurecr.io/qalita/backend:latest
+    image: ghcr.io/qalita-io/qalita/backend:latest
     ports:
       - "3080:3080"
     environment:
@@ -47,14 +47,14 @@ services:
       - s3
       - mailpit
   doc:
-    image: qalita.azurecr.io/qalita/doc:latest
+    image: ghcr.io/qalita-io/qalita/doc:latest
     ports:
       - 3011:3000
     environment:
       - QALITA_API_URL=http://localhost:3080
     user: node
   frontendprod:
-    image: qalita.azurecr.io/qalita/frontend:latest
+    image: ghcr.io/qalita-io/qalita/frontend:latest
     environment:
       - QALITA_API_URL=http://backend:3080
       - NEXT_TELEMETRY_DISABLED=1
@@ -67,7 +67,7 @@ services:
       - backend
       - doc
   db:
-    image: qalita.azurecr.io/postgresql:15.4.0
+    image: ghcr.io/qalita-io/postgresql:15.4.0
     tty: true
     ports:
       - "5432:5432"
@@ -79,14 +79,14 @@ services:
     volumes:
       - data:/bitnami/postgresql
   cache:
-    image: qalita.azurecr.io/redis:7.4.2
+    image: ghcr.io/qalita-io/redis:7.4.2
     hostname: cache
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     ports:
       - "6379:6379"
   mailpit:
-    image: qalita.azurecr.io/mailpit:v1.22.2
+    image: ghcr.io/qalita-io/mailpit:v1.22.2
     ports:
       - "1025:1025"
       - "8025:8025"
@@ -94,7 +94,7 @@ services:
       MP_SMTP_AUTH_ACCEPT_ANY: 1
       MP_SMTP_AUTH_ALLOW_INSECURE: 1
   s3:
-    image: qalita.azurecr.io/seaweedfs:3.80
+    image: ghcr.io/qalita-io/seaweedfs:3.80
     ports:
       - "8333:8333"
       - "8080:8080"
