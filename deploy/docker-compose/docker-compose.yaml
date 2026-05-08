@@ -1,7 +1,7 @@
 name: qalita-platform-frontend-stack
 services:
   backend:
-    image: ghcr.io/qalita-io/qalita/backend:latest
+    image: ghcr.io/qalita-io/platform-backend:latest
     ports:
       - "3080:3080"
     environment:
@@ -47,14 +47,14 @@ services:
       - s3
       - mailpit
   doc:
-    image: ghcr.io/qalita-io/qalita/doc:latest
+    image: ghcr.io/qalita-io/documentation:latest
     ports:
       - 3011:3000
     environment:
       - QALITA_API_URL=http://localhost:3080
     user: node
   frontendprod:
-    image: ghcr.io/qalita-io/qalita/frontend:latest
+    image: ghcr.io/qalita-io/platform-frontend:latest
     environment:
       - QALITA_API_URL=http://backend:3080
       - NEXT_TELEMETRY_DISABLED=1
