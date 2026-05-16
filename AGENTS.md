@@ -1,35 +1,82 @@
 # AGENTS.md — Qalita Tutorials
 
-Ce fichier fournit des instructions aux agents IA pour travailler sur ce dépôt.
+Instructions for AI agents working on this repository.
 
-## Projet
+## Project
 
-**Qalita Tutorials** — Collection de tutoriels, exemples de données et guides d'intégration pour la plateforme Qalita.
+**Qalita Tutorials** — Collection of tutorials, sample data, and integration guides for the Qalita platform.
 
-- **Organisation GitHub** : `qalita-io`
-- **Documentation** : <https://doc.qalita.io/>
+- **Organization** : `qalita-io`
+- **Documentation** : https://doc.qalita.io/
+- **Content** : Markdown, sample datasets, configuration files
+
+## Tech Stack
+
+| Component | Technologies |
+|-----------|-------------|
+| **Content** | Markdown, YAML, JSON |
+| **Data Formats** | CSV, Parquet, JSON, SQL |
+| **Integrations** | dbt, Airflow, Prefect, Great Expectations, Soda |
+| **Platforms** | Docker, Kubernetes, cloud providers |
+| **Documentation** | Markdown with code examples |
+
+## Dependencies
+
+- Docker (for deployment tutorials)
+- dbt, Airflow, or other tools covered in tutorials
+- Sample datasets (anonymized)
+
+## Build/Lint/Test Commands
+
+```bash
+# Validate Markdown syntax (if mdspell or markdownlint configured)
+npx markdownlint **/*.md
+
+# Validate YAML files
+yamllint **/*.yaml **/*.yml
+
+# Validate JSON files
+jsonlint **/*.json
+
+# Test deployment tutorials (Docker Compose)
+cd deploy/docker-compose/ && docker-compose config
+
+# Check links in Markdown (if markdown-link-check configured)
+npx markdown-link-check **/*.md
+```
+
+## Code Conventions
+
+- Each tutorial is a standalone folder with its own `README.md`
+- **Language** : README in English for consistency
+- **Data** : Sample data must be anonymized (no real data)
+- **Formatting** : Consistent Markdown formatting
+- **Links** : Verify links to documentation are valid
+- **Code examples** : Test all code examples before committing
 
 ## Architecture
 
 ```
 tutorials/
 ├── deploy/
-│   └── docker-compose/    # Déploiement via Docker Compose
+│   └── docker-compose/    # Deployment via Docker Compose
 ├── integrations/
-│   ├── data-engineering/  # Intégrations ELT & orchestration
-│   ├── data-quality/      # Intégrations frameworks data quality
-│   └── platform/          # Intégrations plateforme (ticketing, alerting, reporting, catalogues)
-└── source/                # Guides d'enregistrement de sources
+│   ├── data-engineering/  # ELT & orchestration integrations
+│   ├── data-quality/      # Data quality framework integrations
+│   └── platform/          # Platform integrations (ticketing, alerting, reporting, catalogs)
+└── source/                # Source registration guides
 ```
 
-## Conventions
+## Git Workflow
 
-- Chaque tutoriel est un dossier autonome avec son propre `README.md`
-- Les exemples de données doivent être anonymisées (pas de données réelles)
-- **Langue** : README en anglais pour la cohérence avec le reste du repo
-- **Commits** : Messages en anglais, conventionnels (`feat:`, `fix:`, `docs:`)
+- **Commits** : English, conventional commits (`feat:`, `fix:`, `docs:`)
+- **Branches** : `main` (prod), feature branches for development
+- **Tags** : Strict semver `X.Y.Z` for releases
 
-## Règles
+## Content Rules
 
-- ❌ Ne pas commiter de données sensibles ou confidentielles
-- ✅ Vérifier que les liens vers la documentation sont valides
+- ❌ Do not commit sensitive or confidential data
+- ✅ Verify documentation links are valid
+- ✅ Test all code examples and deployment guides
+- ✅ Anonymize all sample datasets
+- ✅ Keep tutorials up to date with platform changes
