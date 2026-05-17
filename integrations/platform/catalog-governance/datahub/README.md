@@ -267,5 +267,3 @@ Example event payload from QALITA:
 ### Backend touchpoints
 
 * `app-backend`: export jobs, mapping resolution, and DataHub API/emitter client.
-
-

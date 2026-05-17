@@ -23,4 +23,3 @@ Notes:
 
 - Uses offset pagination. It upserts by primary key `id` and stops early when items are older than the local `created_at` watermark.
 - Ensure you executed `../warehouse/schema.sql` in your warehouse before the first run.
-

@@ -20,4 +20,3 @@ services:
   # airbyte-webapp, airbyte-server, airbyte-worker, etc. are heavy.
   # For brevity we only expose adapter here. Configure Airbyte to
   # send webhooks to http://host.docker.internal:8080/airbyte/webhook
-

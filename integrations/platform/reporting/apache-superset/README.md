@@ -76,4 +76,3 @@ Indexes are included for common filters (date/project/metric).
 
 ### Docs references
 - Reporting: https://doc.qalita.io/docs/platform/user-guides/reporting
-

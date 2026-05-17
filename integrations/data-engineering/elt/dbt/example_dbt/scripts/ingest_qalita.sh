@@ -20,4 +20,3 @@ qalita ingest dbt \
   --env "$ENV_NAME"
 
 echo "Done."
-

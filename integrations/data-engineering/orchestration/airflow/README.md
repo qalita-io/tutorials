@@ -97,5 +97,3 @@ The DAG includes four tasks: extract, transform, a CLI smoke test, a checks run,
 
 - The example uses the CLI pathway for simplicity. If you prefer direct REST calls, point the CLI at `QALITA_API_URL` or adapt the operator to use `requests` with your auth token.
 - Airflow installations should use version-pinned constraints (see quickstart commands) to avoid dependency conflicts.
-
-

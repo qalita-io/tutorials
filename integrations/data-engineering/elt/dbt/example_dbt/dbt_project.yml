@@ -20,4 +20,3 @@ models:
 
 seeds:
   +schema: "seeds"
-

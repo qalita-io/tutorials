@@ -6,4 +6,3 @@ opendata_dbt:
       path: opendata.duckdb
       threads: 4
       schema: main
-

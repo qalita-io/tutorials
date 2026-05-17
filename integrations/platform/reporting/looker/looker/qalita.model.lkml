@@ -9,5 +9,3 @@ explore: metrics {
 explore: issues {
   view_name: issues
 }
-
-

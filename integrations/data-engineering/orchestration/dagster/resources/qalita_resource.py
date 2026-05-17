@@ -130,5 +130,3 @@ class QalitaResource(ConfigurableResource):
             )
 
         return out
-
-

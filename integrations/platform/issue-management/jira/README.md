@@ -180,6 +180,3 @@ curl -X POST \
 
 - Issues UI and workflow: https://doc.qalita.io/docs/platform/user-guides/issues
 - Admin integrations: https://doc.qalita.io/docs/platform/user-guides/admin/integrations
-
-
-

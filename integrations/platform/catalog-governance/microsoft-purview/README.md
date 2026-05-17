@@ -313,4 +313,3 @@ Example QALITA event payload:
 ### Backend touchpoints
 
 * `app-backend`: export jobs, mapping resolution, and Purview (Atlas) API client.
-

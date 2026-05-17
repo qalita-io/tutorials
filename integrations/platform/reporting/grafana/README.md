@@ -90,4 +90,3 @@ Notes:
 
 ### Docs references
 - Reporting/Monitoring: https://doc.qalita.io/docs/platform/user-guides/reporting
-

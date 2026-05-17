@@ -11,4 +11,3 @@ metric_date,project,domain,metric_name,metric_value,tags
 2025-08-01,Project B,Finance,validity_score,85.0,"{\"owner\":\"team-finance\"}"
 2025-08-02,Project B,Finance,validity_score,84.7,"{\"owner\":\"team-finance\"}"
 2025-08-03,Project B,Finance,validity_score,86.5,"{\"owner\":\"team-finance\"}"
-

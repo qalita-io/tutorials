@@ -33,4 +33,3 @@ ingest:
 
 clean:
 	rm -rf target dbt_packages
-

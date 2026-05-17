@@ -89,5 +89,3 @@ in
     QALITA_GetJson = QALITA_GetJson,
     QALITA_TableFromJson = QALITA_TableFromJson
   ]
-
-

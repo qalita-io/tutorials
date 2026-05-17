@@ -8,4 +8,3 @@ select
     max(measurement_value) as max_value
 from {{ ref('stg_airquality') }}
 group by 1,2,3
-

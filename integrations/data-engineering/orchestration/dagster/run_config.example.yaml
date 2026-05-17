@@ -12,5 +12,3 @@ resources:
       # token: "..."
       agent_name: "dagster-agent"
       agent_mode: "job"
-
-

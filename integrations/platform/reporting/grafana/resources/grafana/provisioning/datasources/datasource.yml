@@ -26,5 +26,3 @@ datasources:
       authenticationType: bearer
     secureJsonData:
       bearerToken: "${QALITA_API_TOKEN}"
-
-

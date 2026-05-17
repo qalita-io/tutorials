@@ -52,5 +52,3 @@ in
     QALITA_Sample_MonthlyScores = QALITA_Sample_MonthlyScores,
     QALITA_Sample_Issues = QALITA_Sample_Issues
   ]
-
-

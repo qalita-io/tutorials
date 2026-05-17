@@ -266,4 +266,3 @@ curl -u <user>:<pass> \
 Backend touchpoints:
 
 * `app-backend`: export jobs, mapping resolution, and Collibra API client.
-

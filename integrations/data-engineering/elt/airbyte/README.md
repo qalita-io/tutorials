@@ -116,5 +116,3 @@ Notes:
 
 - Ensure the referenced `source_id`, `pack_id` and their versions exist in QALITA. You can create sources via `POST /api/v1/sources/publish` and manage packs in the UI.
 - If your Airbyte payload contains a catalog, the adapter will post schemas; otherwise only metrics and job will be created.
-
-

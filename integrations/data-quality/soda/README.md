@@ -68,5 +68,3 @@ If you already have an agent configured and a `Source` published, you can run a 
 
 - For production, plug the scan into your orchestration (Airflow/Dagster) and call QALITA upload endpoints similarly to agent pack post-run.
 - You can also reuse the existing `soda_pack` under `packs/` for a ready-to-run Agent workflow.
-
-

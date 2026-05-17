@@ -144,5 +144,3 @@
     tableau.registerConnector(connector);
   });
 })();
-
-

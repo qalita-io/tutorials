@@ -7,5 +7,3 @@ WITH (FORMAT csv, HEADER true);
 COPY issues (issue_id, project, domain, severity, status, created_at, resolved_at)
 FROM '/docker-entrypoint-initdb.d/seeds/issues.csv'
 WITH (FORMAT csv, HEADER true);
-
-

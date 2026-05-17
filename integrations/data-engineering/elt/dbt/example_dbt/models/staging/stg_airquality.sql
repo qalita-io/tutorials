@@ -11,4 +11,3 @@ select
     trim(unit) as unit,
     cast(date_utc as timestamp) as measured_at_utc
 from source
-

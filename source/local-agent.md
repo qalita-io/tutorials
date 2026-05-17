@@ -27,7 +27,7 @@ First we need to download a dataset, for our tutorial we will download a synthet
   * Source name = `Healthcare_Syncora_Synthetic`
   * Source Type = `file`
   * Source file path: *\<Your source file path>*
-  * Source description = 
+  * Source description =
   ```
   This synthetic healthcare dataset simulates hospital admission records including demographics, billing, medications, and lab results.
   ```
@@ -44,10 +44,10 @@ First we need to download a dataset, for our tutorial we will download a synthet
 * 2.2.3 Go to the local ui : [http://localhost:7070](http://localhost:7070)
 * 2.2.4 Click on [Add a source](http://localhost:7070/sources/add)
 * 2.2.5 Select [File]
-* 2.2.6 Add source informations 
-* 
+* 2.2.6 Add source informations
+*
   * Source name = `Healthcare_Syncora_Synthetic`
-  * Source description = 
+  * Source description =
   ```
   This synthetic healthcare dataset simulates hospital admission records including demographics, billing, medications, and lab results.
   ```

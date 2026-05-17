@@ -33,5 +33,3 @@ CREATE INDEX IF NOT EXISTS idx_issues_project_status
 
 CREATE INDEX IF NOT EXISTS idx_issues_created_at
   ON issues(created_at);
-
-

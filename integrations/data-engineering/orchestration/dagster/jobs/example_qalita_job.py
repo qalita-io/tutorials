@@ -52,5 +52,3 @@ def example_qalita_job():
 
     e >> t >> v >> login
     login >> [sl, pl] >> run
-
-

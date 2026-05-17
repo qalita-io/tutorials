@@ -70,5 +70,3 @@ with DAG(
 
     extract >> transform >> qalita_cli_version >> qalita_agent_login
     qalita_agent_login >> [qalita_source_list, qalita_pack_list] >> qalita_agent_run
-
-

@@ -44,4 +44,3 @@ models:
         tests: [not_null]
       - name: parameter
         tests: [not_null]
-

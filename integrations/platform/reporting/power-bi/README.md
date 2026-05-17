@@ -135,5 +135,3 @@ Build columns like:
 - 401 Unauthorized: token expired or missing scopes; reauthenticate or use API token
 - 204 No Content: resource not found or user lacks access; verify IDs and permissions
 - Refresh errors in Service: ensure the data source privacy is Organizational and M sets headers; avoid using the built-in Web connector auth
-
-

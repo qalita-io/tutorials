@@ -296,5 +296,3 @@ async def airbyte_webhook(req: Request) -> Dict[str, Any]:
         )
 
     return {"ok": True}
-
-

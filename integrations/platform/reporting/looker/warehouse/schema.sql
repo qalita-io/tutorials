@@ -48,5 +48,3 @@ create index if not exists ix_qalita_issues_status on qalita_issues (status);
 create index if not exists ix_qalita_issues_source on qalita_issues (source_id);
 create index if not exists ix_qalita_issues_assignee on qalita_issues (assignee);
 create index if not exists ix_qalita_issues_scope_perimeter on qalita_issues ((scope->>'perimeter'));
-
-

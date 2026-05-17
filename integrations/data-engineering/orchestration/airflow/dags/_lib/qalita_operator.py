@@ -131,5 +131,3 @@ class QalitaOperator(BaseOperator):
             )
 
         return out
-
-

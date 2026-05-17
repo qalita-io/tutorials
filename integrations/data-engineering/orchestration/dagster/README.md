@@ -90,4 +90,3 @@ The job uses the `qalita` Python package (Click-based CLI) via the `QalitaResour
 
 - The example uses the CLI pathway for simplicity. If you prefer direct REST calls, point the CLI at `QALITA_API_URL` or adapt the resource to use `requests` with your auth token.
 - To align with Airflow examples, environment variables are shared: `QALITA_AGENT_ENDPOINT`, `QALITA_AGENT_TOKEN`, `QALITA_AGENT_NAME`, `QALITA_AGENT_MODE`.
-

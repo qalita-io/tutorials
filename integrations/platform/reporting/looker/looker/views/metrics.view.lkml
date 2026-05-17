@@ -30,5 +30,3 @@ view: metrics {
     html: "<a href='${qalita_base_url}/home/data-engineering/sources/${source_id}' target='_blank'>Open Source</a>"
   }
 }
-
-
