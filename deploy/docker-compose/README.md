@@ -11,13 +11,17 @@ To deploy locally on your computer, you will need:
 
 **The license key allows you to connect to the Docker registry and pull Docker images, in addition to adding information for the platform.**
 
-1. Sign in to the Docker image registry:
+1. Sign in to the Qalita client registry:
 
 ```bash
-docker login ghcr.io
+docker login registry.qalita.io
 ```
 
-Use your GitHub username and a personal access token with the `read:packages` scope when prompted for password.
+Use the username and license key provided with your subscription when prompted.
+
+> The images are pinned to a released version (e.g. `2.16.2`). `registry.qalita.io`
+> only serves versioned tags — `latest` is not available. Replace the tag with the
+> version you were licensed for.
 
 2. Create these two files:
 
