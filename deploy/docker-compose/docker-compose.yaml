@@ -47,12 +47,12 @@ services:
       - s3
       - mailpit
   doc:
+    # Published image is the nginx "deploy" stage: it serves the pre-built
+    # static site on port 80 as root. The previous 3011:3000 + user:node
+    # matched the Docusaurus dev server, not this image.
     image: ghcr.io/qalita-io/documentation:latest
     ports:
-      - 3011:3000
-    environment:
-      - QALITA_API_URL=http://localhost:3080
-    user: node
+      - "3011:80"
   frontendprod:
     image: ghcr.io/qalita-io/platform-frontend:latest
     environment:
