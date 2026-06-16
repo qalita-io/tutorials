@@ -27,6 +27,7 @@ services:
       - QALITA_SECRET_KEY=************
       - QALITA_LICENSE_USER=
       - QALITA_LICENSE_KEY=
+      - QALITA_LICENSE_REGISTRY_URL=https://registry.qalita.io
       - QALITA_ALGORITHM=HS256
       - QALITA_ACCESS_TOKEN_EXPIRE_MINUTES=240
       - QALITA_ENV=DEMO
