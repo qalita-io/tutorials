@@ -1,7 +1,7 @@
 name: qalita-platform-frontend-stack
 services:
   backend:
-    image: ghcr.io/qalita-io/platform-backend:latest
+    image: registry.qalita.io/qalita-io/platform-backend:2.16.2
     ports:
       - "3080:3080"
     environment:
@@ -50,11 +50,11 @@ services:
     # Published image is the nginx "deploy" stage: it serves the pre-built
     # static site on port 80 as root. The previous 3011:3000 + user:node
     # matched the Docusaurus dev server, not this image.
-    image: ghcr.io/qalita-io/documentation:latest
+    image: registry.qalita.io/qalita-io/documentation:2.16.2
     ports:
       - "3011:80"
   frontendprod:
-    image: ghcr.io/qalita-io/platform-frontend:latest
+    image: registry.qalita.io/qalita-io/platform-frontend:2.16.2
     environment:
       - QALITA_API_URL=http://backend:3080
       - NEXT_TELEMETRY_DISABLED=1
@@ -67,7 +67,7 @@ services:
       - backend
       - doc
   db:
-    image: ghcr.io/qalita-io/postgresql:15.4.0
+    image: registry.qalita.io/qalita-io/postgresql:15.4.0
     tty: true
     ports:
       - "5432:5432"
@@ -79,14 +79,16 @@ services:
     volumes:
       - data:/bitnami/postgresql
   cache:
-    image: ghcr.io/qalita-io/redis:7.4.2
+    image: registry.qalita.io/qalita-io/redis:7.4.2
     hostname: cache
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     ports:
       - "6379:6379"
   mailpit:
-    image: ghcr.io/qalita-io/mailpit:v1.22.2
+    # Dev mail catcher — not part of the Qalita deliverables, so it is not
+    # mirrored into registry.qalita.io. Pulled from its public upstream image.
+    image: axllent/mailpit:v1.22.2
     ports:
       - "1025:1025"
       - "8025:8025"
@@ -94,7 +96,7 @@ services:
       MP_SMTP_AUTH_ACCEPT_ANY: 1
       MP_SMTP_AUTH_ALLOW_INSECURE: 1
   s3:
-    image: ghcr.io/qalita-io/seaweedfs:3.80
+    image: registry.qalita.io/qalita-io/seaweedfs:3.80
     ports:
       - "8333:8333"
       - "8080:8080"
